@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    font-size: 98px;
+flex-direction:row-reverse ; 
+
+columns: 50px;
+height: 100vh;
+gap: 100px;
+}
+div{
+    border: 2px Solid red;
+}
