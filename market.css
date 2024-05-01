@@ -1,19 +1,79 @@
-body{
-    background-color: navajowhite;
-    
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
 }
+
+content {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
 header {
-    border-radius: 10px ; /* Заокруглити кути рамки */
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-  }
-  div{
-    
-  }
+  border-radius: 10px;
+  /* Заокруглити кути рамки */
+  background-color: #ff0000;
+  padding: 20px;
+  text-align: center;
+}
+
+title {
+  background: #ff0000;
+  width: auto;
+  color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.item {
+  width: 200px;
+  height: 320px;
+  margin-bottom: 10px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 7px #333;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+div {
+  border: 1px solid darkgray;
+}
+
+.contacts p {
+  margin: 3px;
+}
+
+.contacts p:first-child {
+  font-weight: bold;
+}
+
+.contacts p:last-child {
+  border-left: 3px solid #ff0000;
+}
+
+.license {
+  font-size: 9px;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
