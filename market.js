@@ -4,7 +4,7 @@ let itemsDiv = document.getElementById("items")
 
 if (itemsDiv) {
 
-    console.log(itemsDiv)
+    //console.log(itemsDiv)
 
     // console.log('поле classList: ', itemsDiv.classList)
     // console.log('поле id: ', itemsDiv.id)
@@ -17,10 +17,15 @@ if (itemsDiv) {
     // itemsDiv.innerText += 'другий програмно доданий текст'
 
     // itemsDiv.innerHTML += '<h1> Відформатований HTML</h1> '
-    itemsDiv.innerHTML += '<div class = item></div>'
-    itemsDiv.innerHTML += '<div class = item></div>'
-    itemsDiv.innerHTML += '<div class = item></div>'
-    itemsDiv.innerHTML += '<div class = item></div>'
+    // itemsDiv.innerHTML += '<div class = item></div>'
+    // itemsDiv.innerHTML += '<div class = item></div>'
+    // itemsDiv.innerHTML += '<div class = item></div>'
+    // itemsDiv.innerHTML += '<div class = item></div>'
 } else {
     console.log('Блок товарів не знайдено')
+}
+let itemsArray= ['Газонокосарка 43','Електричний тример 110','','']
+//consel.log(itemsArray)
+for (let i=0;i < itemsArray.length;i ++){
+    console.log(itemsArray[i])
 }
