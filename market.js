@@ -1,9 +1,29 @@
-console.log("пр")
-
+console.log("пфсm.js")
+let itemsArray= [
+    'Газонокосарка 43',
+    'Електричний тример 110',
+    'Електрична газонокосарка 32',
+    'Акамулятор 12',
+    // 'Газонокосарка 430',
+    // 'Електричний тример 130',
+    // 'Електрична газонокосарка 320',
+    // 'Акамулятор 120',
+]
 let itemsDiv = document.getElementById("items")
 
 if (itemsDiv) {
 
+itemsArray.forEach((item,index)=>{
+    //console.log(item)
+//itemsDiv.innerText += item
+itemsDiv.innerHTML += 
+    `
+    <div class = "item">
+    <h2>Товар №${index + 1 + ' з 4'}</h2>
+    <p>${item}</p>
+    </div>
+    `
+})
     //console.log(itemsDiv)
 
     // console.log('поле classList: ', itemsDiv.classList)
@@ -24,8 +44,15 @@ if (itemsDiv) {
 } else {
     console.log('Блок товарів не знайдено')
 }
-let itemsArray= ['Газонокосарка 43','Електричний тример 110','','']
+
+
+    // itemsArray.sort().forEach((item,index) =>{
+    //     console.log(index +'-й елемент: ' ,item)
+    // })
+
+  //  itemsArray = itemsArray.sort()
+
 //consel.log(itemsArray)
-for (let i=0;i < itemsArray.length;i ++){
-    console.log(itemsArray[i])
-}
+// for (let i=0;i < itemsArray.length;i ++){
+//     console.log(i + '-й елемент: ', itemsArray[i])
+// }
