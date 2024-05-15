@@ -23,7 +23,7 @@ itemsArray.forEach((item,index)=>{
 itemsDiv.innerHTML += 
     `
     <div class = "item">
-    <h2>Товар №${index + 1 + ' з 12'}</h2>
+    <h2>Товар №${index + 1 } з ${itemsArray.length}</h2>
     <p>${item}</p>
     </div>
     `
