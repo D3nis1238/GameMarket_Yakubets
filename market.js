@@ -1,17 +1,49 @@
 console.log("пфсm.js")
 let itemsArray= [
-    'Газонокосарка 43',
-    'Електричний тример 110',
-    'Електрична газонокосарка 32',
-    'Акамулятор 12',
-    'Газонокосарка 430',
-    'Електричний тример 130',
-     'Електрична газонокосарка 320',
-     'Акамулятор 120',
-     'Газонокосарка 430',
-    'Електричний тример 130',
-     'Електрична газонокосарка 320',
-     'Акамулятор 120',
+    {
+        firstName:"Віталій",
+        LastNAme:"Шатківський",
+        age:43,
+        subject:"CS",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/",
+    },
+    {
+        firstName:"Іван",
+        LastNAme:"Григорович",
+        age:43,
+        subject:"Захист України",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/sevruk-ivan-hryhorovych-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/sevruk-i-h/",
+    },
+    {
+        firstName:"Василь ",
+        LastNAme:"Дмитрович",
+        age:43,
+        subject:"Фізична культура",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/babiy-vasyl-dmytrovych-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/babiy-vasyl-dmytrovych/",
+    },
+    {
+        firstName:"Тарас ",
+        LastNAme:"Євгенович",
+        age:43,
+        subject:"Англ мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/savinkov-taras-yevhenovych-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/savinkov-taras-yevhenovych/",
+    }
+    // 'Газонокосарка 43',
+    // 'Електричний тример 110',
+    // 'Електрична газонокосарка 32',
+    // 'Акамулятор 12',
+    // 'Газонокосарка 430',
+    // 'Електричний тример 130',
+    //  'Електрична газонокосарка 320',
+    //  'Акамулятор 120',
+    //  'Газонокосарка 430',
+    // 'Електричний тример 130',
+    //  'Електрична газонокосарка 320',
+    //  'Акамулятор 120',
 ]
 let itemsDiv = document.getElementById("items")
 
@@ -23,8 +55,11 @@ itemsArray.forEach((item,index)=>{
 itemsDiv.innerHTML += 
     `
     <div class = "item">
-    <h2>Товар №${index + 1 } з ${itemsArray.length}</h2>
-    <p>${item}</p>
+    <h2>Вчитель №${index + 1 } з ${itemsArray.length}</h2>
+    <p>${item.LastNAme} ${item.firstName}</p>
+    <p>Вік: ${item.age} </p>
+    <p><img src = "${item.photo}" class="item-image"> </p>
+    <p><a href = "${item.url}" target="_blank" Профіль> </p>
     </div>
     `
 })
