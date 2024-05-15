@@ -59,7 +59,7 @@ itemsDiv.innerHTML +=
     <p>${item.LastNAme} ${item.firstName}</p>
     <p>Вік: ${item.age} </p>
     <p><img src = "${item.photo}" class="item-image"> </p>
-    <p><a href = "${item.url}" target="_blank" Профіль> </p>
+    <p><a href = "${item.url}" target="_blank" >Профіль </p>
     </div>
     `
 })
