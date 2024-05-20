@@ -97,6 +97,7 @@ itemsDiv.innerHTML +=
     <div class = "item">
     <h2>Вчитель №${index + 1 } з ${itemsArray.length}</h2>
     <p>${item.LastNAme} ${item.firstName}</p>
+    <p> ${item.subject} </p>
     <p>Вік: ${item.age} </p>
     <p><img src = "${item.photo}" class="item-image"> </p>
     <p>ціна: ${item.prise} </p>
